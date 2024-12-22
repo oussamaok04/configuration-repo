@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+
+server:
+  port: 8080
