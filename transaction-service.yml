@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:contribution-service
+    url: jdbc:h2:mem:transaction-service
   cloud:
     discovery:
       enabled: true
