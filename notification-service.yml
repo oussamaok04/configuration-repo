@@ -2,6 +2,17 @@ server:
   port: 8081
 
 spring:
+  datasource:
+    url: jdbc:h2:mem:notification-service
+  cloud:
+    discovery:
+      enabled: true
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
