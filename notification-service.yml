@@ -20,6 +20,10 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
+eureka:
+  instance:
+    prefer-ip-address: true
+
 management:
   health:
     circuitbreakers:
