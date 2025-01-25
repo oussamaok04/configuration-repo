@@ -4,9 +4,9 @@ spring:
       enabled: true
 
     gateway:
-      discovery:
-        locator:
-          lower-case-service-id: true
+      # discovery:
+      #   locator:
+      #     lower-case-service-id: true
           
       routes:
         - id: r1
