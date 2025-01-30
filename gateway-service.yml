@@ -29,7 +29,7 @@ spring:
           predicates:
             - Path=/notifications/**
           
-        - id: r4
+        - id: r5
           uri: lb://GROUP-SERVICE
           predicates:
             - Path=/members/**
