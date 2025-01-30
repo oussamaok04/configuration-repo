@@ -28,6 +28,11 @@ spring:
           uri: lb://NOTIFICATION-SERVICE
           predicates:
             - Path=/notifications/**
+          
+        - id: r4
+          uri: lb://GROUP-SERVICE
+          predicates:
+            - Path=/members/**
 
 server:
   port: 8080
